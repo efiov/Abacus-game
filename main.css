@@ -1,0 +1,170 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary);
+    color: var(--primary);
+    user-select: none;
+    height: 100%;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+:root {
+ --bar: #b4b0ac;
+ --primary: #efefef;
+}
+
+h1 {
+    text-align: center;
+    color: var(--bar);
+    opacity: .9;
+}
+
+#root {
+    position: relative;
+    width: 80vw;
+    margin: auto;
+    height: 200px;
+    text-align: center;
+}
+
+.ball {
+    background-color:  #cabcbc;
+    box-shadow:  3px 3px rgba(131, 116, 116);
+    border-radius: 100px;
+    width: 46px;
+    height: 25px;
+    transition: .35s linear;
+}
+
+.output {
+    margin-top: 5px;
+    border-radius: 100px;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    top: -1000000px;
+    display: none;
+}
+
+table {
+    display: inline-block;
+}
+
+td {
+    height: 25px;
+}
+
+.horizontal-bar {
+    height: 5px;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: var(--bar);
+} 
+    
+.bar {
+    background-color: var(--bar);
+    height: 100% !important; 
+    max-width: 5px;
+    position: relative;
+    left: 50%;
+}
+
+ .numbers-check {
+    display: flex-column;
+    width: 250px;
+    height: 150px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .numbers-check {
+        width: 350px;
+    }
+}
+
+.numbers-check p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #424242;
+    opacity: .8;
+}
+
+#correct {
+    color: rgb(42, 141, 80);
+    opacity: .2;
+    font-family: sans-serif;
+}
+
+#wrong {
+    color: rgb(199, 48, 48);
+    opacity: .2;
+    font-family: sans-serif;
+}
+
+.numbers-check button {
+    width: 150px;
+    background-color: rgb(90, 156, 218);
+    border: none;
+    text-align: center;
+    height: 25px;
+    top: 5px;
+    margin: auto;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+}
+
+.numbers-check span {
+    color: rgb(200, 99, 176);
+    font-size: 24px;
+    opacity: 1;
+    font-weight: bold;
+}
+
+.numbers-check input {
+    width: 70%;
+    height: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    height: 100px;
+    top: calc(100vh - 500px);
+    font-size: 18px;
+    color: var(--bar);
+}
+#verify{
+    width: 135px;
+    height: 25px;
+    background-color: rgb(78, 150, 218);
+    font-family: sans-serif;
+    font-size: 16px;
+    left: calc((100vw - 150px) / 2);
+    position: absolute;
+}
+#verify-btn-text{
+    color: white;
+    font-size: 15px;
+    position: relative;
+    bottom: 11px;
+}
